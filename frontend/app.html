@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Table </title>
+    <!-- the / is their because these are being added through a get request vai server  -->
+    <link href="/style.css" rel="stylesheet">
+    <script type="module" src="/scripts/script.js?v=2"> </script> 
+
+</head>
+<body>
+    <h1> Data CRUD Handler</h1>
+    <div>
+        <h3> Form to add data entries </h3>
+        <form id="userForm">
+            <label for="formName">Name:</label> <br>
+            <input type="text" id="formName" name="name" required><br><br>
+          
+            <label for="formAge">Age:</label><br>
+            <input type="number" id="formAge" name="age" min="0" required><br><br>
+          
+            <label for="formGender">Gender:</label>
+            <select id="formGender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select><br><br>
+          
+            <button id="formButton" type="submit">Submit</button>
+            <p id="formCheck"> </p>
+          </form>
+    </div>
+
+
+
+    <div>
+        <h3> Table for csv data </h3>
+        <table border="1" id="BaseTable"> 
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> Gender </th>
+                    <th> Buttons </th>
+                </tr>
+                <!-- <tr> </tr> -->
+        </table>
+    </div>
+    <div id="formDemo">
+        
+    </div>
+
+</body>
+
+
+</html>

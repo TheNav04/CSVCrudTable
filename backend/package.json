@@ -1,0 +1,23 @@
+{
+    "name": "my-backend",
+    "version": "1.0.0",
+    "description": "Just metaData about the server",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "prestart": "",
+        "start": "node server.js",
+        "poststart": "",
+        "test": "node dummy.js"
+    },
+    "comments": {
+        "c": "script runs with npm <defined script>",
+        "shell": "powershell will block so use this for each session: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process"
+    },
+    "author": "Navtej",
+    "dependencies": {
+        "csv-parser": "^3.2.0",
+        "csv-writer": "^1.6.0",
+        "express": "^5.1.0"
+    }
+}
